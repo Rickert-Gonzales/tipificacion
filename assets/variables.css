@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+:root {
+  --Source-Sans-Pro: "Source Sans Pro", sans-serif;
+  --font-size-navbar: 16px;
+  --font-weight-navbar: 800;
+  /* Card de libro */
+  --font-size-nombreCard: 14px;
+  --font-weight-nombreCard: 400;
+  /* Titulos y suvtitulos */
+  --EB-Garamond: "EB Garamond", serif;
+  --font-size-titulo: 32px;
+  --font-size-tituloGrande: 42px;
+  --font-weight-titulo: 800;
+  /* Textos y subtitulos */
+  --Montserrat: "Montserrat", sans-serif;
+  --font-weight-titulo: 800;
+  --font-weight-subTitulo: 500;
+  --font-size-subTitulo: 12px;
+  --font-size-titulo: 14px;
+  --font-size-buscador: 16px;
+  --font-size-DescBuscador: 18px;
+  /* Enlaces */
+  --font-size-enlace: 14px;
+  --font-weight-enlace: 700;
+  /* Textos de acentuación */
+  --Raleway: "Raleway", sans-serif;
+  --font-size-acentuacion: 12px;
+  --font-weight-acentuacion: 500;
+  /* Footer */
+  --Raleway: "Raleway", sans-serif;
+  --font-size-textFoter: 10px;
+  --font-size-acentuacionFoter: 12px;
+  --font-weight-textFoter: 500;
+  --font-weight-acentuacionFoter: 700;
+  /* =================================== Colores */
+  --color-primario: #fda253;
+  --color-secundario: #00c3b4;
+  --color-textos: #4b4d4a;
+  --color-textos-dos: #fff;
+  --color-textos-tres: #c4c4c4;
+  /* =================================== Tamaño Logo */
+  --logo-w: 174px;
+  --logo-h: 43px;
+  --img-heder-w: 744px;
+  --img-heder-h: 516px;
+  --img-insignias: 82px;
+  --img-libros-w: 309px;
+  --img-libros-h: 532px;
+  --img-unasam-w: 54px;
+  --img-unasam-h: 68px;
+  --footer-w: 100%;
+  --footer-h: 136px;
+}

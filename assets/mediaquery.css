@@ -1,0 +1,239 @@
+@import url("../assets/variables.css");
+@import url("../assets/mediaquery.css");
+
+/* ========== Responisv */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  /* Telefonos */
+  .contenedor {
+    margin: 0 auto;
+    width: 95%;
+  }
+  .contenedor nav {
+    padding-top: 6px;
+    padding-bottom: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .logo,
+  nav .logo img {
+    width: 92px;
+    height: 27px;
+  }
+  nav .enlaces {
+    margin-top: 24px;
+    width: 100%;
+  }
+  nav .enlaces ul {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .enlaces ul li {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* Seccion Principal */
+  .hero {
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .content-left {
+    text-align: center;
+    width: 100% !important;
+  }
+  .hero .content-left h2 {
+    width: 100%;
+    line-height: 28px;
+    font-size: 32px !important;
+  }
+  .buscador p:nth-child(1) {
+    font-size: 12px;
+  }
+  .buscador p:nth-child(3) {
+    font-size: 14px;
+  }
+  .buscador form {
+    width: 100% !important;
+    height: 42px !important;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px !important;
+    display: flex;
+  }
+  .buscador form input {
+    padding-left: 6px;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+  }
+  .buscador form button {
+    border-radius: 4px !important;
+  }
+  .buscador form button i {
+    font-size: 18px !important;
+  }
+  /* Seccion derecha */
+  .hero .content-rigth {
+    width: 100% !important;
+    height: auto !important;
+    text-align: center;
+  }
+  .hero .content-rigth .fondo {
+    position: absolute !important;
+    width: 98% !important;
+    height: 150px !important;
+    top: 60px !important;
+    right: -10px !important;
+    border-radius: 12px 0px 0px 0px;
+  }
+  .hero .content-rigth .imagen {
+    position: relative !important;
+    right: 0px !important;
+    bottom: 0px !important;
+  }
+  .imagen img {
+    width: 304px;
+  }
+  /* ======================= Seccion de documentos */
+  .seccion-ensayos.ensayo {
+    margin-top: 12px !important;
+  }
+  .seccion-ensayos {
+    margin-top: 12px !important;
+    height: auto !important;
+  }
+  .titulo h2 {
+    font-size: 24px !important;
+  }
+  .titulo .subr {
+    width: 35px !important;
+    height: 4px;
+  }
+  .seccion-doc {
+    padding-left: 0px !important;
+    flex-direction: column;
+  }
+  .ref-doc {
+    display: flex;
+    align-items: center;
+  }
+  .ref-doc .portada {
+    width: 45px !important;
+    height: 72px !important;
+    margin: 12px !important;
+  }
+  .ref-doc .portada img {
+    width: 45px !important;
+    height: 72px !important;
+  }
+  .ref-doc .describ {
+    margin-left: 12px;
+  }
+  /* ========================== INformaciòn */
+  .seccion-información {
+    height: auto !important;
+  }
+  .img-libros {
+    width: auto !important;
+  }
+  .img-libros img {
+    opacity: 0;
+    width: 0px !important;
+    height: 0px !important;
+    bottom: 0px !important;
+  }
+  .seccion-info {
+    width: 100%;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccion-info p {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #333;
+  }
+  .seccion-iconos {
+    flex-wrap: wrap;
+    justify-content: space-around !important;
+    top: 0px !important;
+  }
+  .card-icono {
+    width: 100px;
+    margin-bottom: 12px;
+  }
+  .card-icono .icono {
+    width: 38px !important;
+    height: 38px !important;
+    margin: 0 auto;
+  }
+  .card-icono .icono img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  .text-icono {
+    padding: 0px !important;
+    padding-top: 18px !important;
+    font-size: 10px !important;
+    font-weight: 500;
+  }
+  /* ====================== Pie de pagina */
+  footer {
+    height: auto !important;
+  }
+  .contenedor.seccion-footer {
+    align-items: flex-start !important;
+  }
+  .img-footer {
+    width: auto !important;
+    margin-right: 18px !important;
+    padding-top: 12px;
+  }
+  .text-footer {
+    width: auto !important;
+    flex-wrap: wrap;
+    justify-content: stretch !important;
+    padding-right: 0px !important;
+    padding-bottom: 32px !important;
+    margin: 0 auto !important;
+  }
+  .text-footer .curso,
+  .text-footer {
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  /* Telefonos en vertical */
+  body {
+    background: green;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  /* Tablet */
+  body {
+    background: blue;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 967px) {
+  /* Tablets Vertical */
+  body {
+    background: orange;
+  }
+}
+
+@media screen and (min-width: 968px) and (max-width: 1023px) {
+  /* Portatil en horizontal */
+  body {
+    background: tomato;
+  }
+}

@@ -1,0 +1,275 @@
+@import url("../assets/variables.css");
+@import url("../assets/mediaquery.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos para el header */
+.contenedor {
+  margin: 0 auto;
+  width: 92%;
+}
+.contenedor nav {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo,
+nav .logo img {
+  width: var(--logo-w);
+  height: var(--logo-h);
+}
+nav .enlaces {
+  width: 50%;
+}
+nav .enlaces ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav .enlaces ul li {
+  list-style: none;
+}
+nav .enlaces ul li a {
+  text-decoration: none;
+  color: var(--color-textos);
+  font-family: var(--Raleway);
+  font-size: var(--font-size-navbar);
+  font-weight: var(--font-weight-navbar);
+}
+/* Seccion principal */
+.hero {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+}
+.hero .content-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hero .content-left h2 {
+  font-family: var(--EB-Garamond);
+  font-weight: var(--font-weight-titulo);
+  font-size: 56px;
+  color: #333;
+}
+.buscador p:nth-child(1) {
+  font-family: var(--Montserrat);
+  font-size: var(--font-size-subTitulo);
+  font-weight: var(--font-weight-subTitulo);
+  padding-bottom: 12px;
+}
+.buscador p:nth-child(3) {
+  font-family: var(--Montserrat);
+  font-size: var(--font-size-DescBuscador);
+  font-weight: var(--font-weight-subTitulo);
+  padding-top: 12px;
+}
+.buscador form {
+  width: 430px;
+  height: 52px;
+  border: 2px solid #c4c4c4;
+  border-radius: 6px;
+  display: flex;
+}
+.buscador form input {
+  width: 90%;
+  height: 100%;
+  padding-left: 12px;
+  font-family: var(--Montserrat);
+  font-weight: var(--font-weight-subTitulo);
+  font-size: var(--font-size-buscador);
+  color: var(--color-textos);
+  border-style: none;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+.buscador form button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  border-style: none;
+  background: var(--color-textos-dos);
+  border-radius: 6px;
+}
+.buscador form button i {
+  font-size: 24px;
+  color: #c4c4c4;
+}
+/* Seccion derecha */
+.hero .content-rigth {
+  width: 55%;
+  position: relative;
+}
+.hero .content-rigth .fondo {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh + 0px);
+  background: var(--color-secundario);
+  z-index: -1;
+  top: -80px;
+  right: -54px;
+}
+.hero .content-rigth .imagen {
+  position: absolute;
+  right: -54px;
+  bottom: -4px;
+  /* z-index: 9; */
+}
+/* ======================= Seccion de documentos */
+.seccion-ensayos.ensayo {
+  margin-top: 24px;
+}
+.seccion-ensayos {
+  width: 100%;
+  height: calc(50vh - 24px);
+}
+.seccion-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titulo h2 {
+  font-family: var(--EB-Garamond);
+  font-size: 34px;
+}
+.titulo .subr {
+  background: var(--color-primario);
+  color: var(--color-primario);
+  width: 45px;
+  height: 4px;
+}
+.enlace a {
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-family: var(--Montserrat);
+  font-weight: var(--font-weight-enlace);
+  font-size: var(--font-size-enlace);
+}
+.enlace i {
+  margin-left: 12px;
+  color: var(--color-secundario);
+}
+.seccion-doc {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 36px;
+  padding-left: 80px;
+}
+.ref-doc .portada {
+  width: 98px;
+  height: 156px;
+  margin: 0 auto;
+}
+.ref-doc .portada img {
+  width: 98px;
+  height: 156px;
+  object-fit: cover;
+}
+.ref-doc .describ h3 {
+  font-size: 14px;
+  font-weight: 900;
+  font-family: var(--EB-Garamond);
+}
+.ref-doc .describ p {
+  font-family: var(--Source-Sans-Pro);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-textos);
+}
+.ref-doc .describ span {
+  color: var(--color-secundario);
+  font-family: var(--Raleway);
+  font-size: 12px;
+  font-weight: 500;
+}
+/* ========================== INformaciòn */
+.seccion-información {
+  display: flex;
+  height: 82vh;
+  width: 100%;
+}
+.img-libros {
+  width: 35%;
+}
+.img-libros img {
+  width: 309px;
+  height: 532px;
+  position: relative;
+  bottom: -12px;
+}
+.seccion-info {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seccion-info p {
+  padding-bottom: 200px;
+  font-family: var(--Montserrat);
+  font-size: 18px;
+  font-weight: 500;
+}
+.seccion-iconos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -70px;
+}
+.card-icono .icono {
+  text-align: center;
+}
+.text-icono {
+  padding: 32px;
+  text-align: center;
+  font-family: var(--Montserrat);
+  font-size: 12px;
+  font-weight: 500;
+}
+/* ====================== Pie de pagina */
+footer {
+  height: 18vh;
+  background: #252525;
+}
+.contenedor.seccion-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.img-footer {
+  width: 5%;
+  padding-right: 20px;
+  text-align: right;
+}
+.text-footer {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 120px;
+}
+.contenedor.seccion-footer p {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: var(--Raleway);
+  color: #c4c4c4;
+  margin-bottom: 3px;
+}
+.contenedor.seccion-footer h2 {
+  color: var(--color-secundario);
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--Raleway);
+  padding: 14px;
+}
